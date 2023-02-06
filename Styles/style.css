@@ -1,0 +1,91 @@
+/* Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Poppins' , 'sans-serif' ;
+}
+body{
+	height: 100vh;
+	/* margin: 0 60px; */
+	background-image: url('/Images/night-bg.png');
+	background-size: 100% 100% ;
+	background-repeat: no-repeat;
+}
+/* header -> logo , vertical-line , navigation-link , buy-1-token button */
+header{
+	display: grid;
+	grid-template-columns: 15% 5% 60% 20%;
+	background-color: black;
+	padding: 0 60px;
+	height: 70px;
+
+}
+/* logo */
+header img{
+	align-self: center;
+	width: 100px;
+	cursor: pointer;
+}
+/* vertical-line */
+header span{
+	align-self: center;
+	width: 2px;
+	height: 60%;
+	background-color: gray;
+}
+/* navigation-link */
+header nav{
+	align-self: center;
+}
+/* buy-1-token button */
+header button{
+	align-self: center;
+	justify-self: end;
+}
+/* this .btn for both button buy-1-token & request-early-access */
+.btn{
+	width: max-content;
+	padding: 5px 25px;
+	background-color: #ba0cc5;
+	color: white;
+	font-weight: 600;
+	font-size: 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	border: none;
+}
+/* naviagtion link anchor  */
+nav a{
+	font-weight: 600;
+	font-size: 20px;
+	color: white;
+	text-decoration: none;
+	padding: 0px 8px;
+	letter-spacing: 0.5px;
+}
+/* hover effect on nav-link anchor */
+nav a:hover{
+	color: #ba0cc5;
+}
+main{
+	height: 400px;
+}
+.center{
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	line-height: 60px;
+	font-size: 20px;
+	padding-top: 40px;
+}
+.center h1{
+	font-size: 60px;
+}
+.center p{
+	margin-bottom: 50px;
+}
